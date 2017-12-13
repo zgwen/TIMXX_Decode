@@ -2,7 +2,7 @@
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\USER\stm32f4xx.h
 ..\obj\main.o: ..\CORE\core_cm4.h
-..\obj\main.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\main.o: ..\CORE\core_cmInstr.h
 ..\obj\main.o: ..\CORE\core_cmFunc.h
 ..\obj\main.o: ..\CORE\core_cm4_simd.h
@@ -37,7 +37,7 @@
 ..\obj\main.o: ..\FWLIB\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
-..\obj\main.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\main.o: ..\HARDWARE\LED\led.h
 ..\obj\main.o: ..\HARDWARE\SPI\spi.h
 ..\obj\main.o: ..\LWIP\lwip_app\lwip_comm\lwip_comm.h
@@ -50,10 +50,10 @@
 ..\obj\main.o: ..\HARDWARE\SRAM\sram.h
 ..\obj\main.o: ..\MALLOC\malloc.h
 ..\obj\main.o: ..\UCOSII\CONFIG\includes.h
-..\obj\main.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
-..\obj\main.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\ctype.h
-..\obj\main.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\main.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 ..\obj\main.o: ..\UCOSII\CORE\ucos_ii.h
 ..\obj\main.o: ..\UCOSII\CONFIG\includes.h
 ..\obj\main.o: ..\UCOSII\CONFIG\os_cfg.h

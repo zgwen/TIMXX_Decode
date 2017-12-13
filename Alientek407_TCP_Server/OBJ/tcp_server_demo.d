@@ -3,7 +3,7 @@
 ..\obj\tcp_server_demo.o: ..\SYSTEM\sys\sys.h
 ..\obj\tcp_server_demo.o: ..\USER\stm32f4xx.h
 ..\obj\tcp_server_demo.o: ..\CORE\core_cm4.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\tcp_server_demo.o: ..\CORE\core_cmInstr.h
 ..\obj\tcp_server_demo.o: ..\CORE\core_cmFunc.h
 ..\obj\tcp_server_demo.o: ..\CORE\core_cm4_simd.h
@@ -37,11 +37,11 @@
 ..\obj\tcp_server_demo.o: ..\FWLIB\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h
 ..\obj\tcp_server_demo.o: ..\FWLIB\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h
 ..\obj\tcp_server_demo.o: ..\UCOSII\CONFIG\includes.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\string.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\ctype.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 ..\obj\tcp_server_demo.o: ..\UCOSII\CORE\ucos_ii.h
 ..\obj\tcp_server_demo.o: ..\UCOSII\CONFIG\includes.h
 ..\obj\tcp_server_demo.o: ..\UCOSII\CONFIG\os_cfg.h
@@ -62,7 +62,7 @@
 ..\obj\tcp_server_demo.o: ..\LWIP\lwip-1.4.1\src\include\lwip/err.h
 ..\obj\tcp_server_demo.o: ..\LWIP\arch/sys_arch.h
 ..\obj\tcp_server_demo.o: ..\LWIP\lwip-1.4.1\src\include\lwip/api.h
-..\obj\tcp_server_demo.o: D:\Program Files\keil\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\tcp_server_demo.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 ..\obj\tcp_server_demo.o: ..\LWIP\lwip-1.4.1\src\include\lwip/netbuf.h
 ..\obj\tcp_server_demo.o: ..\LWIP\lwip-1.4.1\src\include\lwip/pbuf.h
 ..\obj\tcp_server_demo.o: ..\LWIP\lwip-1.4.1\src\include\ipv4\lwip/ip_addr.h

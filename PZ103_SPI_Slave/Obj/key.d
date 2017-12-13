@@ -1,0 +1,17 @@
+.\obj\key.o: app\key\key.c
+.\obj\key.o: app\key\key.h
+.\obj\key.o: .\CMSIS\stm32f10x.h
+.\obj\key.o: .\CMSIS\core_cm3.h
+.\obj\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\key.o: .\CMSIS\system_stm32f10x.h
+.\obj\key.o: .\Users\stm32f10x_conf.h
+.\obj\key.o: .\StdPeriphDriver\inc\stm32f10x_flash.h
+.\obj\key.o: .\CMSIS\stm32f10x.h
+.\obj\key.o: .\StdPeriphDriver\inc\stm32f10x_fsmc.h
+.\obj\key.o: .\StdPeriphDriver\inc\stm32f10x_gpio.h
+.\obj\key.o: .\StdPeriphDriver\inc\stm32f10x_rcc.h
+.\obj\key.o: .\StdPeriphDriver\inc\stm32f10x_spi.h
+.\obj\key.o: .\StdPeriphDriver\inc\stm32f10x_usart.h
+.\obj\key.o: .\StdPeriphDriver\inc\misc.h
+.\obj\key.o: .\app\usart\usart.h
+.\obj\key.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

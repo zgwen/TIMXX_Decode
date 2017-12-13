@@ -1,0 +1,54 @@
+#ifndef _DECODE_H
+#define _DECODE_H
+
+/*定义各个字段相对于起始地址的偏移量*/
+#define TIMXX_TYPE_OF_COMMAND 0
+#define TIMXX_COMMAND 3
+#define TIMXX_VERSION_NUMBER 14
+/*device information*/
+#define TIMXX_DEVICE_NUMBER 16
+#define TIMXX_SERIAL_NUMBER 18
+#define TIMXX_DEVICE_STATUS 22
+/*status information*/
+#define TIMXX_TELEGRAM_COUNTER 24
+#define TIMXX_SCAN_COUNTER 26
+#define TIMXX_TIME_SINCE_STARTUP 28
+#define TIMXX_TIME_OF_TRANSMISSION 32
+#define TIMXX_INPUT_STATUS 36
+#define TIMXX_OUTPUT_STATUS 38
+#define TIMXX_CHECKSUM 40
+#define TIMXX_RESERVED_BYTE_A 41
+/*measerment parameters*/
+#define TIMXX_SCANNING_FREQUENCY 43
+#define TIMXX_MEASUREMENT_FREQUENCY 47
+//const 0
+#define TIMXX_NUMBER_OF_ENCODERS 51
+//const 1
+#define TIMXX_NUMBER_OF_16_BIT_CHANNELS 53
+/*output channels 1*/
+#define TIMXX_MEASURED_DATA_CONTENTS 55 
+#define TIMXX_SCALING_FACTOR 60
+#define TIMXX_SCALING_OFFSET 64
+#define TIMXX_STARTING_ANGLE 68
+#define TIMXX_ANGULAR_STEP_WIDTH 72 
+//const 91
+#define TIMXX_NUMBER_OF_DATA 74
+#define TIMXX_DATA 76
+
+//reserved
+#define TIMXX_NUM_OF_8_BIT_CHANNELS 258
+#define TIMXX_POSITION 260
+#define TIMXX_NAME 262
+#define TIMXX_COMMENT 264
+#define TIMXX_TIME_INFORMATION 266
+#define TIMXX_EVENT_INFORMATION 268
+
+#define TIMXX_RECV_LEN  270
+
+
+extern char rqst_buf[];
+
+unsigned int TIMXX_Decode(char *send_buf, char *recv_buf);
+
+#endif
+

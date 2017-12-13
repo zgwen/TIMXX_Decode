@@ -62,6 +62,7 @@ void start_task(void *pdata);
 //在LCD上显示地址信息
 //mode:1 显示DHCP获取到的地址
 //	  其他 显示静态地址
+struct TIMXXData data;
 void show_address(u8 mode)
 {
 	u8 buf[30];
@@ -95,7 +96,6 @@ int main(void)
 	usmart_dev.init(84);	//初始化USMART
 	LED_Init(); 			//LED初始化
 	SPI2_Init();	//SPI2初始化
-	
 	
 	FSMC_SRAM_Init(); 		//SRAM初始化
 	
@@ -208,8 +208,8 @@ void spi_task(void *pdata)
 				recv_ok = 0;	//标志需接收数据
 				OS_ENTER_CRITICAL(); 
 				memset(tcp_server_sendbuf,0,TCP_SERVER_TX_BUFSIZE);  //LWIP发送缓冲区清零
-				i=TIMXX_Decode((char *)tcp_server_sendbuf,(char *)spi_recvbuf);	//译码，并将数据写入tcp_server_sendbuf
-				printf("String len: %d\r\n",i);
+				i=TIMXX_Decode((char *)tcp_server_sendbuf,(struct TIMXXData *)spi_recvbuf);	//译码，并将数据写入tcp_server_sendbuf
+				//printf("String len: %d\r\n",i);
 				tcp_server_flag |= LWIP_SEND_DATA;	//通知LWIP数据待发
 				OS_EXIT_CRITICAL(); 
 		}

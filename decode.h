@@ -1,11 +1,7 @@
-
-
-
-
-
+#include <stdint.h> 
 
 /*定义各个字段相对于起始地址的偏移量*/
-#define TIMXX_TYPE_OF_COMMAND 0
+#define TIMXX_TYPE_OF_COMMAND 1 //实际为0
 #define TIMXX_COMMAND 3
 #define TIMXX_VERSION_NUMBER 14
 /*device information*/
@@ -47,4 +43,41 @@
 #define TIMXX_EVENT_INFORMATION 268
 
 #define TIMXX_RECV_LEN  270
+
+
+#pragma pack(1)
+struct TIMXXData{
+ char typeofcmd[3];
+ char cmd[11];
+ uint16_t versionnum;
+ uint16_t devicenum;
+ uint32_t serialnum;
+ uint16_t devicestat;
+ uint16_t telegramcount;
+ uint16_t scancount;
+ uint32_t timesincestart;
+ uint32_t timeoftrans;
+ uint16_t inputstat;
+ uint16_t outputstat;
+ uint8_t checksum;
+ uint16_t resbytea;
+ uint32_t scanfreq;
+ uint32_t measurefreq;
+ uint16_t numofencod;
+ uint16_t numof16bitchan;
+ char measuredadacont[5];
+ float scalfac;
+ float scaloffset;
+ int32_t startangle;
+ uint16_t angstepwidth;
+ uint16_t numofdata;
+ uint16_t data[91];
+ uint16_t numof8bitchan;
+ uint16_t position;
+ uint16_t name;
+ uint16_t comment;
+ uint16_t timeinfo;
+ uint16_t eventinfo;
+};
+#pragma pack()
 
